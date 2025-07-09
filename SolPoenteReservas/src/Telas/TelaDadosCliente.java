@@ -13,6 +13,18 @@ public class TelaDadosCliente extends javax.swing.JFrame {
     /**
      * Creates new form TelaDadosCliente
      */
+    private String nomeCliente;
+    private int idade;
+    private String cpf;
+    private String sexo;
+    private String whatsapp;
+    private String email;
+    private String cidade;
+    private String rua;
+    private String numeroCasa;
+    
+    
+    
     public TelaDadosCliente() {
         initComponents();
     }
@@ -214,6 +226,11 @@ public class TelaDadosCliente extends javax.swing.JFrame {
 
         btnSalvar.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         btnSalvar.setText("Salvar");
+        btnSalvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalvarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPDadosPessoaisLayout = new javax.swing.GroupLayout(jPDadosPessoais);
         jPDadosPessoais.setLayout(jPDadosPessoaisLayout);
@@ -294,6 +311,12 @@ public class TelaDadosCliente extends javax.swing.JFrame {
     private void jCSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCSexoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCSexoActionPerformed
+
+    private void btnSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalvarActionPerformed
+        // TODO add your handling code here:
+        
+        nomeCliente = txtNomeCliente.getText();
+    }//GEN-LAST:event_btnSalvarActionPerformed
 
     /**
      * @param args the command line arguments
